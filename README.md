@@ -12,8 +12,8 @@ A `subid_users` variable is required e.g.:
 - name: Set users
   set_fact:
     subid_users:
-	  - peter
-	  - james
+      - peter
+      - james
 
 - name: Generate subuids & subgids
   include_role:
