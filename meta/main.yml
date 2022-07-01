@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  role_name: subuid_subgid
+  namespace: rwxd
+  author: rwxd
+  description: subuid subgid creation
+
+  platforms:
+    - name: GenericUNIX
+
+  license: GPL-3.0
+
+  min_ansible_version: "3.0"
+
+  galaxy_tags: ["subuid,subgid"]
+
+dependencies: []
