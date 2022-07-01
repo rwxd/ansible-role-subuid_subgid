@@ -15,7 +15,7 @@
     mode: 0644
     owner: root
     group: root
-  loop: "{{ users }}"
+  loop: "{{ subid_users }}"
   loop_control:
     loop_var: "user"
 
@@ -29,6 +29,6 @@
     mode: 0644
     owner: root
     group: root
-  loop: "{{ users }}"
+  loop: "{{ subid_users }}"
   loop_control:
     loop_var: "user"

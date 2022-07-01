@@ -5,7 +5,7 @@
   tasks:
     - name: Set users for role
       set_fact:
-        users:
+        subid_users:
           - james
           - thorsten
           - svc.backup

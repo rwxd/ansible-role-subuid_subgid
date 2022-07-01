@@ -6,12 +6,18 @@ Inspired from this blog article <https://eengstrom.github.io/musings/generate-no
 
 ## Usage
 
-A `users` variable is required e.g.:
+A `subid_users` variable is required e.g.:
 
 ```yaml
-users:
-  - peter
-  - james
+- name: Set users
+  set_fact:
+    subid_users:
+	  - peter
+	  - james
+
+- name: Generate subuids & subgids
+  include_role:
+    name: subuid_subgid
 ```
 
 `/etc/subuid` will contain
