@@ -10,8 +10,8 @@ A `users` variable is required e.g.:
 
 ```yaml
 users:
-	- peter
-	- james
+  - peter
+  - james
 ```
 
 `/etc/subuid` will contain
