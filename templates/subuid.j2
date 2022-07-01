@@ -1,0 +1,3 @@
+{% for user in users %}
+{{ user }}:{{ getent_passwd[user].1 | int | bitwise_shift_left(16) }}:65536
+{% endfor %}
