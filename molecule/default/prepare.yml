@@ -1,0 +1,19 @@
+---
+- name: Prepare
+  hosts: all
+  tasks:
+    - name: Create test users
+      ansible.builtin.user:
+        name: "{{ item.name }}"
+        uid: "{{ item.uid | default(omit) }}"
+        system: "{{ item.system | default(false) }}"
+      become: true
+      with_items:
+        - name: james
+          uid: "1003"
+        - name: thorsten
+          uid: "1004"
+        - name: svc.backup
+          uid: "1006"
+        - name: systemuser123
+          system: true

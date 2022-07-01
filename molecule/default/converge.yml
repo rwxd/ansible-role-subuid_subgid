@@ -1,0 +1,16 @@
+---
+- name: Converge
+  hosts: all
+  diff: true
+  tasks:
+    - name: Set users for role
+      set_fact:
+        users:
+          - james
+          - thorsten
+          - svc.backup
+          - systemuser123
+
+    - name: "Include ansible_role_subuid_subgid"
+      ansible.builtin.include_role:
+        name: "ansible_role_subuid_subgid"

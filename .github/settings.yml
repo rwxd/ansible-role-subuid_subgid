@@ -1,0 +1,5 @@
+repository:
+  name: "ansible_role_subuid_subgid"
+  description: "Ansible Role to generate subuid & subgid"
+  homepage: "https://rwxd.github.io/ansible-role-subuid-subgid/"
+  topics: "ansible,podman,rootless,container,ansible-role,subuid,subgid"

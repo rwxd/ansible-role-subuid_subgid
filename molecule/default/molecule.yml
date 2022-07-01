@@ -1,0 +1,24 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: podman
+platforms:
+  - name: debian
+    image: docker.io/python:buster
+    pre_build_image: true
+  - name: centos
+    image: docker.io/centos:latest
+    pre_build_image: true
+provisioner:
+  name: ansible
+  playbooks:
+    prepare: prepare.yml
+  inventory:
+    host_vars:
+      debian:
+        ansible_become: false
+      centos:
+        ansible_become: false
+verifier:
+  name: ansible
