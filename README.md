@@ -4,6 +4,28 @@ Creates subuid & subgid mappings for users.
 
 Inspired from this blog article <https://eengstrom.github.io/musings/generate-non-contiguous-subuid-subgid-maps-for-rootless-podman>
 
+## Install
+
+`roles/requirements.yml`
+
+```bash
+---
+roles:
+  - name: subuid_subgid
+    version: v1.0.2
+    src: git@github.com:rwxd/ansible-role-subuid_subgid.git
+    scm: git
+```
+
+`ansible.cfg`
+
+```bash
+[defaults]
+roles_path=./roles
+```
+
+Get requirements with `ansible-galaxy role install -r roles/requirements.yml`
+
 ## Usage
 
 A `subid_users` variable is required e.g.:
