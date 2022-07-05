@@ -13,4 +13,4 @@
 
     - name: "Include ansible_role_subuid_subgid"
       ansible.builtin.include_role:
-        name: "ansible_role_subuid_subgid"
+        name: "ansible-role-subuid_subgid"
