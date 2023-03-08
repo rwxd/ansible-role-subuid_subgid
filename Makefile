@@ -6,8 +6,7 @@ help:
 setup: ## setup required things
 	python3 -m pip install -U -r requirements-dev.txt
 	pre-commit install
-	pre-commit install-hooks
-
+	
 pre-commit-all: ## run pre-commit on all files
 	pre-commit run --all-files
 
