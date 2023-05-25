@@ -1,3 +1,5 @@
 ---
 subid_users: []
 ansible_become: true
+subuid_bitshift: 16
+subgid_bitshift: "{{subuid_bitshift}}"

@@ -9,7 +9,7 @@
   ansible.builtin.lineinfile:
     path: "/etc/subuid"
     regexp: "{{ user }}"
-    line: "{{ user }}:{{ getent_passwd[user].1 | int | bitwise_shift_left(16) }}:65536"
+    line: "{{ user }}:{{ getent_passwd[user].1 | int | bitwise_shift_left(subuid_bitshift) }}:65536"
     backup: true
     create: true
     mode: 0644
@@ -23,7 +23,7 @@
   ansible.builtin.lineinfile:
     path: "/etc/subgid"
     regexp: "{{ user }}"
-    line: "{{ user }}:{{ getent_passwd[user].2 | int | bitwise_shift_left(16) }}:65536"
+    line: "{{ user }}:{{ getent_passwd[user].2 | int | bitwise_shift_left(subgid_bitshift) }}:65536"
     backup: true
     create: true
     mode: 0644
