@@ -12,7 +12,7 @@ Inspired from this blog article <https://eengstrom.github.io/musings/generate-no
 ---
 roles:
   - name: subuid_subgid
-    version: v1.0.2
+    version: main
     src: git@github.com:rwxd/ansible-role-subuid_subgid.git
     scm: git
 ```
