@@ -58,8 +58,8 @@ james:65470464:65536
 
 ### Configure the size of the bitshift
 
-UID's can be not larger than 2^32. So if you have large UID's you may want to use a smaller bitshift.  
-<https://wiki.gentoo.org/wiki/Subuid_subgid>  
+UID's can be not larger than 2^32. So if you have large UID's you may want to use a smaller bitshift.
+<https://wiki.gentoo.org/wiki/Subuid_subgid>
 <https://bit-calculator.com/bit-shift-calculator>
 
 ```yaml

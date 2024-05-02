@@ -4,7 +4,7 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 setup: ## setup required things
-	python3 -m pip install -U -r requirements-dev.txt
+	python -m pip install -U -r requirements-dev.txt
 	pre-commit install
 
 pre-commit-all: ## run pre-commit on all files
