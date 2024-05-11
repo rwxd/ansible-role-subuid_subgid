@@ -2,7 +2,7 @@
 # https://eengstrom.github.io/musings/generate-non-contiguous-subuid-subgid-maps-for-rootless-podman
 
 - name: Get user infos
-  getent:
+  ansible.builtin.getent:
     database: passwd
     key: "{{ subid_user }}"
 

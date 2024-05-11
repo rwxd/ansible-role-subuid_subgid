@@ -4,7 +4,7 @@
   diff: true
   tasks:
     - name: Set users for role
-      set_fact:
+      ansible.builtin.set_fact:
         subid_users:
           - james
           - thorsten
