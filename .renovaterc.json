@@ -1,4 +1,8 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>rwxd/renovate-config"]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "https://git.chaops.de/rwxd/renovate-config/raw/branch/main/default.json",
+        "https://git.chaops.de/rwxd/renovate-config/raw/branch/main/schedule/weekly.json",
+        "https://git.chaops.de/rwxd/renovate-config/raw/branch/main/automerge/all.json"
+    ]
 }
